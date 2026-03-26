@@ -95,7 +95,7 @@ public class Program
             double pow = double.Parse(x);
             for (int i = 1; i < double.Parse(y); i++)
             {
-                pow = pow * pow;
+                pow = pow * double.Parse(x);
             }
             return pow;
         }
