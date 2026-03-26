@@ -86,6 +86,22 @@ public class Program
 	// Implement this method following a similar pattern as above
 	public static double Power(string x, string y)
 	{
-		return 0.0;
-	}
+        if (double.Parse(y) == 0)
+        {
+            return 1;
+        }
+        else if (double.Parse(y) == 1)
+        {
+            return double.Parse(x);
+        }
+        else
+        {
+            double pow = 0;
+            for (int i = 0; i < double.Parse(y); i++)
+            {
+                pow += double.Parse(x) * double.Parse(y);
+            }
+            return pow;
+        }
+    }
 }
